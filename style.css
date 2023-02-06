@@ -1,0 +1,24 @@
+.hands-anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+path {
+  stroke-dasharray: 8085;
+  stroke-dashoffset: 8085;
+
+  /* Draw once and done. */
+  /* animation: dash 5s linear forwards; */
+
+  /* Keep drawing */
+  animation: dash 12s ease-in-out infinite alternate;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 8085;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
